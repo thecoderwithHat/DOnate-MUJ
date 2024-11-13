@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: #475B51;
+    background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);;
+    ;
 }
 .logout-button{
     background-color:#f0f0f0;

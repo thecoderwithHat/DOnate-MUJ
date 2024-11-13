@@ -8,14 +8,20 @@ import Preferences from "./pages/Preferences/Preferences";
 import Rec from "./pages/Rec";
 import Dashboard from "./pages/Dashboard";
 import Organization from "./components/Organization"
+import { AuthProvider } from "./AuthContext";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
     return (
         <div>
             <NavBar/>
+            <AuthProvider>
             <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/login" element={<Login />}/>
+                <Route path="/" element={<PrivateRoute>
+                    <Home/>
+                </PrivateRoute>}/>
                 <Route path="/signup" element={<SignUp />}/>
                 <Route path="/dashboard" element={<Dashboard />}/>
                 <Route path="/preferences" element={<Preferences />}/>
@@ -28,6 +34,7 @@ function App() {
                 />}/>
                 {/*<Route path="*" element={<Navigate to="/" replace />}/>*/}
             </Routes>
+            </AuthProvider>
         </div>
     )
 }

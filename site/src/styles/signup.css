@@ -1,6 +1,6 @@
 
 body {
-    background-color: #475B51;
+    background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);;
 }
 
 .signupContainer {
@@ -27,7 +27,7 @@ body {
 .signupContainer input {
     margin-left: 5px;
     border-radius: 8px;
-    border: 1px solid #393939 ;
+    border: 1px solid #1d1d1d ;
     padding-left: 10px;
 }
 
